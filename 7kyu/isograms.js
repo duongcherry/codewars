@@ -19,11 +19,3 @@
     
 //   }
 
-  function disemvowel(str) {
-    str = str.split('')
-    
-    let vowelArr = ['a','e','i','o','u']
-    
-    return str.filter(v => !vowelArr.includes(v.toLowerCase())).join('')
-  
-  }
