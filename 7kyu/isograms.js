@@ -9,12 +9,21 @@
 // isIsogram "moose" = false
 // isIsogram "aba" = false
 
-//my solution
-function isIsogram(str){
-    //lowercase array
-    let arr = str.toLowerCase().split('')
+//my solutions
+// function isIsogram(str){
+//     //lowercase array
+//     let arr = str.toLowerCase().split('')
     
-    //check for duplicates
-    return arr.every(x => arr.indexOf(x) == arr.lastIndexOf(x))
+//     //check for duplicates
+//     return arr.every(x => arr.indexOf(x) == arr.lastIndexOf(x))
     
+//   }
+
+  function disemvowel(str) {
+    str = str.split('')
+    
+    let vowelArr = ['a','e','i','o','u']
+    
+    return str.filter(v => !vowelArr.includes(v.toLowerCase())).join('')
+  
   }
